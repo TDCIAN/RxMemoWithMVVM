@@ -1,0 +1,6 @@
+framework module Pods_RxMemoWithMVVM {
+  umbrella header "Pods-RxMemoWithMVVM-umbrella.h"
+
+  export *
+  module * { export * }
+}
