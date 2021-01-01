@@ -80,11 +80,35 @@
                     <view key="view" contentMode="scaleToFill" id="Eq1-5z-Mtr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xTV-Hc-49s">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Z2j-AK-0On"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xTV-Hc-49s" firstAttribute="trailing" secondItem="Z2j-AK-0On" secondAttribute="trailing" id="6qM-h2-dng"/>
+                            <constraint firstAttribute="bottom" secondItem="xTV-Hc-49s" secondAttribute="bottom" id="HiD-Lm-1pc"/>
+                            <constraint firstItem="xTV-Hc-49s" firstAttribute="leading" secondItem="Z2j-AK-0On" secondAttribute="leading" id="duR-Lx-VwK"/>
+                            <constraint firstItem="xTV-Hc-49s" firstAttribute="top" secondItem="Eq1-5z-Mtr" secondAttribute="top" id="kIq-Xj-HBw"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="새 메모" id="FU0-gm-wju"/>
+                    <navigationItem key="navigationItem" title="새 메모" id="FU0-gm-wju">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="SVv-1s-2dg"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ZRt-aT-Jbp"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="SVv-1s-2dg" id="7UL-xf-kIV"/>
+                        <outlet property="contentTextView" destination="xTV-Hc-49s" id="z03-CD-HC1"/>
+                        <outlet property="saveButton" destination="ZRt-aT-Jbp" id="wnq-XI-MyR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SV1-ld-krc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,6 +169,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
