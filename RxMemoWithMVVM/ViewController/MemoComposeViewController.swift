@@ -89,6 +89,7 @@ extension Reactive where Base: UITextView {
     var contentInset: Binder<UIEdgeInsets> {
         return Binder(self.base) { textView, inset  in
             textView.contentInset = inset
+            textView.scrollIndicatorInsets = inset
         }
     }
 }
