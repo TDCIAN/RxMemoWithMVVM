@@ -28,6 +28,7 @@
 		18F262E0259F444A00CC034B /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F262DF259F444A00CC034B /* SceneCoordinatorType.swift */; };
 		18F262E3259F44C900CC034B /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F262E2259F44C900CC034B /* SceneCoordinator.swift */; };
 		18F262E6259F474C00CC034B /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F262E5259F474C00CC034B /* CommonViewModel.swift */; };
+		18F648EE25A04CD90035B40E /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F648ED25A04CD90035B40E /* CoreDataStorage.swift */; };
 		4A6B927403A598E6E4881E38 /* Pods_RxMemoWithMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4680E1BB239633803D16E11D /* Pods_RxMemoWithMVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		18F262DF259F444A00CC034B /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		18F262E2259F44C900CC034B /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		18F262E5259F474C00CC034B /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
+		18F648ED25A04CD90035B40E /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 		26917B1E890C8A645E9D2443 /* Pods-RxMemoWithMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemoWithMVVM.debug.xcconfig"; path = "Target Support Files/Pods-RxMemoWithMVVM/Pods-RxMemoWithMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		2D51718791F0FCD9D679A630 /* Pods-RxMemoWithMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemoWithMVVM.release.xcconfig"; path = "Target Support Files/Pods-RxMemoWithMVVM/Pods-RxMemoWithMVVM.release.xcconfig"; sourceTree = "<group>"; };
 		4680E1BB239633803D16E11D /* Pods_RxMemoWithMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMemoWithMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				18934B4C259DC8EF00137E69 /* RxMemoWithMVVM.xcdatamodeld */,
+				18F648ED25A04CD90035B40E /* CoreDataStorage.swift */,
 			);
 			path = CoreDataStorage;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F262C2259F360A00CC034B /* MemoryStorage.swift in Sources */,
+				18F648EE25A04CD90035B40E /* CoreDataStorage.swift in Sources */,
 				18F262D4259F40D400CC034B /* MemoComposeViewModel.swift in Sources */,
 				18F262E3259F44C900CC034B /* SceneCoordinator.swift in Sources */,
 				18F262DD259F42B400CC034B /* Scene.swift in Sources */,
