@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import RxDataSources
 
-struct Memo: Equatable {
+struct Memo: Equatable, IdentifiableType {
     var content: String
     var insertDate: Date
     var identity: String // 메모를 구분할 때 사용되는 속성
